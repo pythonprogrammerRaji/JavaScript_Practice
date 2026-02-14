@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+   <center><h1>Events Concepts</h1></center>
+
+   <h2>A. Mouse Events</h2>
+   <br>
+   <h3>1. Onclick</h3>
+   <p>Onclick is a when we click the one button then function can be executed</p>
+    <p><b id="p1"></b></p>
+    <button onclick="event1()">Click Here</button>
+
+    <hr>
+
+    <h3>2. Double click</h3>
+    <p>On Double click is a when we are Double click the button then function can executed</p>
+    <p><b id="p2"></b></p>
+    <button ondblclick="event2()">Double Click Here</button>
+    <hr>
+
+    <h3>3. MouseOver</h3>
+    <p id="p3">When the mouse is move on button then function can executed</p>
+    <button onmouseover="event3()">Click Here</button>
+    <hr>
+
+    <h3>3. MouseOut</h3>
+    <p id="p4">When the mouse is out on button then function can executed</p>
+    <button onmouseout="event4()">Click Here</button>
+    <hr>
+
+    <h2>B. Focus Events</h2>
+    <br>
+
+    <h3>1. onfocus</h3>
+    <p>When we focus on text box function will be executed</p>
+    <input type="text" name="name" id="text" onfocus="event5()">
+
+    <h3>1. onfocus</h3>
+    <p>When we click the outside of text box then function will be executed</p>
+    <input type="text" name="name" id="text" onblur="event6()">
+
+    <script>
+        let paragraph1 = document.getElementById("p1");
+        let paragraph2 = document.getElementById("p2");
+        let paragraph3 = document.getElementById("p3");
+        let paragraph4 = document.getElementById("p4");
+
+        let text = document.getElementById("text");
+
+
+        // 1. onclick function
+        function event1(){
+            paragraph1.innerText = "The First Paragraph";
+        }
+
+        //2. On Double click function
+        function event2(){
+            paragraph2.innerText = "The Second Paragraph";
+        }
+
+        // 3. OnMouseOver
+        function event3(){
+            paragraph3.style.color = "red";
+        }
+
+        // 4. Onmouseout
+        function event4(){
+            paragraph4.style.color = "blue";
+        }
+
+        // onfocus
+        function event5(){
+            text.style.border = "3px solid red";
+            text.style.borderRadius = "10px"
+            
+        }
+    </script>
+
+
+
+</body>
+</html>
