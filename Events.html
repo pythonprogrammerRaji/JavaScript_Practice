@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in js</title>
+    <link rel="stylesheet" href="Events.css">
+</head>
+<body>
+   <header class="header">
+        <nav class="navbar">
+            <div class="nav-left" id="company">
+                Company
+            </div>
+            <div class="nav-right">
+                <ul>
+                    <li class="revenue">Revenue</li>
+                    <li class="sales">Sales</li>
+                    <li class="customers">Customers</li>
+                    <li class="reports">Reports</li>
+                    <li class="setting">Setting</li>
+                </ul>
+            </div>
+            <button id="dark-theme" class="dark-theme" onclick="darkTheme()" ondblclick="lightTheme()">
+                Dark Theme
+            </button>
+
+            <button id="loginBtn" class="login" onclick="showLogin()">Login</button>
+
+            <button id="add-border" onclick="addBorder()" ondblclick="removeBorder()">Add Border</button>
+        </nav>
+
+        
+   </header>
+<div class="loginContainer">
+   <div class="login-model" id="loginSection">
+        <h3>Login</h3>
+        <button class="closebtn" id="closeBtn" onclick="hideLogin()">Close</button>
+        <input type="text" placeholder="Enter your name"><br>
+        <input type="text" placeholder="Enter your password"><br>
+        <button id="loginSubmit" onmouseover="loginOver()" onmouseout="loginOut()">Submit</button>
+   </div>
+</div>
+
+   <div class="title">
+        <div class="dash-left">
+            <ul>
+                <li>Dashboard</li>
+                <li class="revenue">Revenue</li>
+                <li class="sales">Sales</li>
+                <li class="customers">Customers</li>
+                <li class="reports">Reports</li>
+                <li class="metting">Meeting</li>
+                <li class="events">Events</li>
+                <li class="setting">Setting</li>
+                
+            </ul>
+        </div>
+
+        <div class="title-right">
+            <div>
+                <div class="title1" onmouseover="eleOver(this)" onmouseout="eleOut(this)">
+                    <h2>Revenue</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolor </p>
+                </div>
+                
+                <div class="title1" onmouseover="eleOver(this)" onmouseout="eleOut(this)">
+                    <h2>Sales</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolor </p>
+                </div>
+                
+                <div class="title1" onmouseover="eleOver(this)" onmouseout="eleOut(this)">
+                    <h2>Customers</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolor </p>
+                </div>
+            </div>
+            
+            <div>
+                <div class="title1" onmouseover="eleOver(this)" onmouseout="eleOut(this)">
+                    <h2>Reports</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolor </p>
+                </div>
+        
+                
+                <div class="title1" onmouseover="eleOver(this)" onmouseout="eleOut(this)">
+                    <h2>Meeting</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolor </p>
+                </div>
+                
+                <div class="title1" onmouseover="eleOver(this)" onmouseout="eleOut(this)">
+                    <h2>Events</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, dolor </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="main-container">
+        <form id="myForm">
+            <label for="nameText">Name:</label><br>
+            <input type="text" placeholder="Enter your name" id="nameText"><br>
+        
+            <button type="submit" class="formBtn">Submit</button>
+        </form>
+       
+        <div class="User">
+            <h2>User Details:</h2>
+            <h4 id="username" style="color: blue;"></h4>
+        </div>
+    </div>
+
+    <select id="myColors">
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="red">Red</option>
+        <option value="orange">Orange</option>
+        <option value="pink">Pink</option>
+        <option value="purple">Purple</option>
+    </select>
+
+    <!-- the box1 used to display the color -->
+    <div id="box1"></div>  
+
+    <!-- the box2 used to display the text -->
+     <div id="box2"></div>
+
+     <div class="main-container1">
+        <form id="myForm1">
+            <label for="userText">Name:</label><br>
+            <input type="text" placeholder="Enter your name" id="userText"><br>
+        </form>
+       
+        <div class="User">
+            <h2>User Details:</h2>
+            <h4 id="newusername" style="color: green;"></h4>
+        </div>
+    </div>
+
+    <div class="keyInput">
+        <input type="text" onkeyup="inputKeyup()" placeholder="Its keyup event">
+
+        <input type="text" onkeydown="inputKeydown()"  placeholder="Its keydown event">
+
+        <input type="text" onkeypress="inputKeypress()"  placeholder="Its keypress event">
+    </div>
+
+     
+
+    <script src="Events.js"></script>
+</body>
+</html>
