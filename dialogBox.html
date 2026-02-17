@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to dialog box </h1>
+</body>
+
+<script>
+    // Dialog  box
+
+    // 1. alert()
+    // if(10 < 20){
+    //     alert("10 is less than 20");
+    // }
+    // else{
+    //     alert("10 is not a less than 20")
+    // }
+
+    // 2. prompt()
+
+    let women = confirm("Are you Women..?");
+
+    if(women){
+        let name = prompt("Please Enter your name");
+
+        document.write("Hello Miss " + name + " Welcome to Javascript world")
+    }
+    else
+    {
+        let name = prompt("Please Enter your name");
+
+        document.write("Hell Mr." + name + " Welcome to Scripted World")
+    }
+
+    // 3. confirm()
+    // confirm("are you sure")
+</script>
+</html>
