@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        background-color: green;
+        font-size: 30px;
+        color: white;
+        padding: 20px;
+        width: 20%;
+        border-radius: 10px;
+
+    }
+    button{
+        padding: 10px;
+        width: 100px;
+        color: white;
+        background-color: orangered;
+        font-size: 16px;
+        border-radius: 10px;
+        border: 2px solid gray;
+        font-weight: bold;
+        
+    }
+</style>
+<body>
+
+    <h1 id="title">Welcome to the class</h1>
+
+    <button id="magic">Click me</button>
+
+
+    
+    <script>
+        let button = document.getElementById("magic");
+        let title = document.getElementById("title");
+
+        button.addEventListener("click",function(){
+
+            title.innerText = "You are click the button"
+            title.style.backgroundColor = "blue";
+            title.style.color = "white";
+            title.style.fontSize = "30px";
+            title.style.width = "400px"
+            title.style.borderRadius = "20px"
+            title.style.fontStyle = "italic"
+            
+        })
+    </script>
+    
+
+
+
+
+
+
+
+
+
+    <Script src="basic.js"></Script>
+    <script src="conditionalStatement.js"></script>
+    <script src="loop.js"></script>
+    <script src="function.js"></script>
+    <script src="ASynchrnous.js"></script>
+    <script src="promisone.js"></script>
+</body>
+</html>
