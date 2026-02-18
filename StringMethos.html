@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Method</title>
+</head>
+<body>
+    <center><h2>String Methods</h2></center>
+</body>
+<script>
+    // 1. split() => The slipt method to separate the letter or word in one string using comma
+
+    document.write("<h3>1. Spite() Method <h3>") 
+
+    let sample = "This is a string sample text"
+
+    document.write(sample.split(" ")) // for words
+    console.log(sample.split(""))  // for letter
+    document.write("<hr>")
+
+    // 2. trim() => its remove the string space 
+    document.write("<h3>2. trim() Method <h3>") 
+
+    let name = "My    name is    Rajeshwari"
+    document.write(name)
+    console.log(name.trim())
+    document.write("<hr>")
+
+    // 3. charAt() => Its given output as which index have which character
+
+    document.write("<h3>3. charAt() Method <h3>") 
+    
+    let student = "Aishu"
+
+    document.write(student.charAt(4))
+    document.write("<hr>")
+
+    //4. toUppercase() => to convert all elemenets in uppercase
+
+    document.write("<h3>4. Uppercase() Method <h3>") ;
+
+    let sam = "This to late"
+    document.write(sam.toUpperCase())
+    document.write("<hr>")
+
+    //4. toUppercase() => to convert all elemenets in loercase
+
+    document.write("<h3>6. Lowercase() Method <h3>") ;
+
+    let chandra = "THIS ALL GOOD"
+    document.write(chandra.toLowerCase())
+    document.write("<hr>")
+
+    //4. replace() => to replce the one word to other(changing the word)
+    // 5. replaceAll() => to replace all same word in text
+
+    document.write("<h3>4. replace() Method <h3>") ;
+
+    let human = "Now I am student, student is resposibility"
+
+    document.write("Its replace only one word in the text ",human.replace("student","Empolyee"), "<br>")
+    document.write("Its replce all word whose have same word in one text ",human.replaceAll("student", "Empolyee"))
+    document.write("<hr>")
+
+    // 6. Sunstring => substring is exctrat the string and return the substring
+
+    document.write("<h3>4. substring() Method <h3>") ;
+    let i = "my name is deepa"
+
+    document.write(i.substring(0, 7));
+
+
+
+</script>
+</html>

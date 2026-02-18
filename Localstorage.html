@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // <!-- local storage -->  in LocalStorage store the data parmentaly, user can only delete the data in manually
+
+        
+        localStorage.setItem('name', "Aishu")    
+        localStorage.setItem('name1', "Raji")
+        localStorage.setItem('name2', "Ammu")
+        localStorage.setItem('name3', "Chandu")//  to setting the item in localStorage
+ 
+        let name = localStorage.getItem('name')   // to getting the item in localstorage using the variable and display the value in console using kwy
+        let name1 = localStorage.getItem('name1')
+        let name2 = localStorage.getItem('name2')
+        let name3 = localStorage.getItem('name3')
+        console.log(name);
+        console.log(name1);
+        console.log(name2);
+        console.log(name3);
+
+        localStorage.removeItem('name1')   // remove the one particular data in localstorage
+        localStorage.clear();          // clear the all data in localstorage
+
+
+        
+      
+
+    </script>
+
+</body>
+</html>
