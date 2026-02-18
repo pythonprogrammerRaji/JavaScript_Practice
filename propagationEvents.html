@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PropogationEvents</title>
+</head>
+<style>
+    #parent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid red;
+        height: 500px;
+    }
+    #child{
+        border: 2px solid blue;
+        padding: 70px;
+    }
+    #parent>h1{
+        position: relative;
+        top: -48%;
+        left: -24px;
+        color: green;
+    }
+    #child>h1{
+        position: relative;
+        top: -95px;
+        left: -65px;
+        color: orangered;
+    }
+    .completed{
+        text-decoration: line-through;
+        color: blue;
+    }
+</style>
+<body>
+    <div id="parent">
+        <h1>parent</h1>
+        <div id="child">
+            <h1>child</h1>
+            <div>
+                <button id="event1">Event1</button>
+                <button id="event2">Event2</button>
+            </div>
+        </div>
+    </div>
+
+    <ul id="tasks">
+        <li>Task1</li>
+        <li>Task2</li>
+        <li>Task3</li>
+    </ul>
+
+    <script src="propogationEvent.js"></script>
+</body>
+</html>
