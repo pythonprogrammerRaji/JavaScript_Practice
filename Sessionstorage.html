@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // sessionStorage   => In sessionStorage data is stored in temprally, when tab is fully closed that time data is deleted in sessionStorage
+
+        sessionStorage.setItem('name',"aishu");;   // to set tha data into sessionStorage data ia key and value pair
+
+        let name = sessionStorage.getItem('name');   //get the data into sessionStorage
+        console.log(name);    // display the data on console using the key value
+
+        sessionStorage.removeItem('name');   // to remove the pne particular dat into sessionStorage
+
+        sessionStorage.clear();   // clear teh all data into sessionStorage
+
+
+
+
+    </script>
+</body>
+</html>
