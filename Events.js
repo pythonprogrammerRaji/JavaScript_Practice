@@ -1,91 +1,91 @@
-let darkTheme1 = document.getElementById("dark-theme");
+let darkTheme1 = document.getElementById("dark-theme");;
 
 // onclick event
 function darkTheme(){
-    document.querySelector("body").style.backgroundColor = "black";
-    document.querySelector(".dark-theme").textContent = "Light Theme";
-    document.querySelector(".navbar").style.backgroundColor = "#2E282A";
-    document.querySelector(".dash-left").style.backgroundColor = "gray";
+    document.querySelector("body");.style.backgroundColor = "black";
+    document.querySelector(".dark-theme");.textContent = "Light Theme";
+    document.querySelector(".navbar");.style.backgroundColor = "#2E282A";
+    document.querySelector(".dash-left");.style.backgroundColor = "gray";
 
   
 }
 
-// Ondbclick (Double Click)
+// Ondbclick (Double Click);
 function lightTheme(){
-    document.querySelector("body").style.background = "white";
-    document.querySelector(".dark-theme").textContent = "Dark Theme";
-    document.querySelector(".navbar").style.backgroundColor = " #F86624";
-    document.querySelector(".dash-left").style.backgroundColor = "blue";
+    document.querySelector("body");.style.background = "white";
+    document.querySelector(".dark-theme");.textContent = "Dark Theme";
+    document.querySelector(".navbar");.style.backgroundColor = " #F86624";
+    document.querySelector(".dash-left");.style.backgroundColor = "blue";
 }
 
 // onmouseover
 
-function eleOver(element){
-    // document.querySelectorAll(".title1").style.backgroundColor = "yellow";
+function eleOver(element);{
+    // document.querySelectorAll(".title1");.style.backgroundColor = "yellow";
     element.style.backgroundColor = "Yellow";
 }
 
 //onmouseout
-function eleOut(item){
-    item.style.backgroundColor = " rgba(220, 220, 220, 0.945)";
+function eleOut(item);{
+    item.style.backgroundColor = " rgba(220, 220, 220, 0.945);";
 }
 
 //login page
-let loginModel = document.getElementById("loginSection");
-let loginBtn = document.getElementById("loginBtn")
-let closeBtn = document.getElementById("closeBtn");
-let loginSubmit = document.getElementById("loginSubmit");
-let dashLeft = document.querySelector(".dash-left");
-let titleRight = document.querySelectorAll(".title-right .title1");
-let AddBorder = document.getElementById("add-border");
+let loginModel = document.getElementById("loginSection");;
+let loginBtn = document.getElementById("loginBtn");
+let closeBtn = document.getElementById("closeBtn");;
+let loginSubmit = document.getElementById("loginSubmit");;
+let dashLeft = document.querySelector(".dash-left");;
+let titleRight = document.querySelectorAll(".title-right .title1");;
+let AddBorder = document.getElementById("add-border");;
 
-loginBtn.addEventListener("click", showLogin)
+loginBtn.addEventListener("click", showLogin);
 
 function showLogin(){
         dashLeft.style.display = "none";
         titleRight.forEach(element => {
             element.style.display = "none";
-        });
+        });;
         loginModel.style.display = "block";
 }
 
-closeBtn.addEventListener("click", hideLogin)
+closeBtn.addEventListener("click", hideLogin);
 
 function hideLogin(){
     dashLeft.style.display = "block";
     titleRight.forEach(element => {
         element.style.display = "block";
-    });
+    });;
     loginModel.style.display = "none"
 }
 // to changing the submit Button background color using mouseover event
-// document.getElementById("loginSubmit").addEventListener("mouseover", function() {
+// document.getElementById("loginSubmit");.addEventListener("mouseover", function() {
 //     this.style.background = "red";
-// })
+// });
 
 // to changing the submit Button background color using mouseover event
 
-loginSubmit.addEventListener('mouseover', loginOver)
+loginSubmit.addEventListener('mouseover', loginOver);
 function loginOver(){
     loginSubmit.style.backgroundColor = "green"
 }
 
 
-loginSubmit.addEventListener('mouseout', loginOut)
+loginSubmit.addEventListener('mouseout', loginOut);
 function loginOut(){
     loginSubmit.style.backgroundColor = "#1768AC"
 }
 
-AddBorder.addEventListener("click", addBorder)
+AddBorder.addEventListener("click", addBorder);
 
 function addBorder(){
-    document.querySelector("header").style.border = "5px solid green"
+    document.querySelector("header");.style.border = "5px solid green"
 }
 
-AddBorder.removeEventListener("dblclick", removeBorder)
+AddBorder.removeEventListener("dblclick", removeBorder);
 
 function removeBorder(){
-    document.querySelector("header").style.border = "none";
+    document.querySelector("header");.style.border = "none";
 }
 
 // form events
@@ -93,17 +93,17 @@ function removeBorder(){
 
 document.addEventListener("DOMContentLoaded", function() {
     
-let mainForm = document.getElementById("myForm");
-let InputText = document.getElementById("nameText");
-let Username = document.getElementById("username");
+let mainForm = document.getElementById("myForm");;
+let InputText = document.getElementById("nameText");;
+let Username = document.getElementById("username");;
 
-if(!mainForm){
-    close.error("Form not found!");
+if(!mainForm);{
+    close.error("Form not found!");;
 }
 
-mainForm.addEventListener("submit", FormSubmit)
+mainForm.addEventListener("submit", FormSubmit);
 
-function FormSubmit(e){
+function FormSubmit(e);{
     e.preventDefault();   // its help to page avoid the refresh  page when I am click the submit button
 
     const myInputText = InputText.value;
@@ -113,43 +113,43 @@ function FormSubmit(e){
     // 2. reset() => after submit the data clink submit button its clear the data, we can use the reset after submit
     mainForm.reset();
 }
-})
+});
 // 3. Focus => when we move the curser its focus the element
-let InputText = document.getElementById("nameText");
+let InputText = document.getElementById("nameText");;
 
-InputText.addEventListener("focus", function(event){
+InputText.addEventListener("focus", function(event);{
     event.target.style.background = "pink";
 
-    console.log(event.target)
-  })
+    console.log(event.target);
+  });
 
 // 4.blur => when we move the curser outside the focus event remove on element. blur event used to after the focus event
 
-InputText.addEventListener("blur", function(event){
+InputText.addEventListener("blur", function(event);{
     event.target.style.background = "";
 
-    console.log(event.target)
-  })
+    console.log(event.target);
+  });
 
-// 5. change => the change use to change the existing element(Bengnlore) to new element(Rayadhurg)
+// 5. change => the change use to change the existing element(Bengnlore); to new element(Rayadhurg);
 
- let myNewColor = document.getElementById("myColors");
- let myNewBox1 = document.getElementById("box1");
- let myNewBox2 = document.getElementById("box2");
+ let myNewColor = document.getElementById("myColors");;
+ let myNewBox1 = document.getElementById("box1");;
+ let myNewBox2 = document.getElementById("box2");;
 
  myNewColor.addEventListener("change", function(){
     myNewBox1.style.background = myNewColor.value;
- })
+ });
 
  myNewColor.addEventListener("change", function(){
     myNewBox2.textContent = myNewColor.value;
- })
+ });
 
 //  4. input => its apply only for text Input field
 
-let myNewForm = document.getElementById("myForm1");
-let UserText = document.getElementById("userText");
-let NewUsername = document.getElementById("newusername");
+let myNewForm = document.getElementById("myForm1");;
+let UserText = document.getElementById("userText");;
+let NewUsername = document.getElementById("newusername");;
 
 myNewForm.addEventListener("input", function(){
 
@@ -157,7 +157,7 @@ myNewForm.addEventListener("input", function(){
 
     NewUsername.textContent =  UserText.value;
 
-})
+});
 
 //  => events
 
@@ -180,24 +180,24 @@ myNewForm.addEventListener("input", function(){
 
 // KeyboardEvent
 
-// 1. keyup => its used when we press and release the key in keyboard (the function is occur when press and release the key)
+// 1. keyup => its used when we press and release the key in keyboard (the function is occur when press and release the key);
 
 function inputKeyup(){  
-    alert("you are release the key in keyboard");
+    alert("you are release the key in keyboard");;
 }
 
-// 1. keydown => its used when we press the key in keyboard its work (the function first occur after its showing the result)
+// 1. keydown => its used when we press the key in keyboard its work (the function first occur after its showing the result);
 function inputKeydown(){  
-    alert("you are pressing the key in keyboard");
+    alert("you are pressing the key in keyboard");;
 }
 
-// 1. keydown => its used when we press the key in keyboard its work (the function first occur without seeing the output)
+// 1. keydown => its used when we press the key in keyboard its work (the function first occur without seeing the output);
 function inputKeypress(){  
-    alert("you are pressing the key and hold it in keyboard");
+    alert("you are pressing the key and hold it in keyboard");;
 }
 
-// if(10<20){
-//     AddBorder.removeEventListener("click", addBorder)
+// if(10<20);{
+//     AddBorder.removeEventListener("click", addBorder);
 // }
 
 
@@ -205,9 +205,9 @@ function inputKeypress(){
 
 
 // const darkTheme = function(){
-//     document.querySelector("body").style.backgroundColor = "block";
-//     document.querySelector(".dark-theme").textContent = "Light Theme";
-//     document.querySelector(".navbar").style.backgroundColor = "gray";
-//     document.querySelector(".dash-left").style.backgroundColor = "red";
+//     document.querySelector("body");.style.backgroundColor = "block";
+//     document.querySelector(".dark-theme");.textContent = "Light Theme";
+//     document.querySelector(".navbar");.style.backgroundColor = "gray";
+//     document.querySelector(".dash-left");.style.backgroundColor = "red";
 
 // }
