@@ -2,80 +2,80 @@
 
 // function declaration
 function print(){
-    console.log("hello JS World..!");
+    console.log("hello JS World..!");;
 }
 print();  // function call 
 
 let friends = ["Aishu","Kerthana","Chandu","Kavya", "Nandu", "Nisarga","Likhitha","siri","priya","bindu"];
 
-for(let i=0;i<friends.length;i++){
-    console.log("Happy Vinayaka Chavithi to "+ friends[i]+"!");
+for(let i=0;i<friends.length;i++);{
+    console.log("Happy Vinayaka Chavithi to "+ friends[i]+"!");;
 }
 print(); 
 
 // function with parameter and argument  
 
-function greet(firstname, lastname){  // parameters
-    console.log("Hello " + firstname  + lastname);
+function greet(firstname, lastname);{  // parameters
+    console.log("Hello " + firstname  + lastname);;
 
 }
-greet("vani","shree");   // arguments
+greet("vani","shree");;   // arguments
 
 // multiple ways of assigned the parameter and arguments
 
-function sum(x, y){
-    console.log("sum of ",x+y)
+function sum(x, y);{
+    console.log("sum of ",x+y);
 }
-sum(10, 20);
+sum(10, 20);;
 
-function sub(a, b=0){
-    console.log("sub of",a-b)
+function sub(a, b=0);{
+    console.log("sub of",a-b);
 }
-sub(10);
+sub(10);;
 
-function mul(p=2, q=4){
-    console.log("multiple of",p*q)
+function mul(p=2, q=4);{
+    console.log("multiple of",p*q);
 }
 mul();
 
-function div(r, s){
-    console.log("division of",r/s)
+function div(r, s);{
+    console.log("division of",r/s);
 }
-div(10, 2);
+div(10, 2);;
 // first function go to call back function then its go to main function for perform the some task
 
 
 // function return
-function add(num1, num2){  // parameters
+function add(num1, num2);{  // parameters
     return num1+num2;
 }
-const result = add(3, 4)   // arguments
-console.log(result);
+const result = add(3, 4);   // arguments
+console.log(result);;
 
 
 // in function return the another function 
 
-function fn1(x){    // fn1 is a main function
-    function fn2(y){    // fn2 is a sub function, inside the fn1 only declare and call or return the fn2
+function fn1(x);{    // fn1 is a main function
+    function fn2(y);{    // fn2 is a sub function, inside the fn1 only declare and call or return the fn2
         return x*y;
     }
 
     return fn2;
 }
-const res = fn1(3);
-console.log(res(2));
+const res = fn1(3);;
+console.log(res(2););;
 
 // callback function => its a function, the fn1 to pass the another function as a argument
 
-function display(results){
-    console.log(results);
+function display(results);{
+    console.log(results);;
 }
 
-function add1(n1, n2, myCallback){
+function add1(n1, n2, myCallback);{
     let sum1 = n1 + n2;
-    myCallback(sum1)
+    myCallback(sum1);
 }
-add1(3, 6, display)
+add1(3, 6, display);
 
 // Anonymous function
 
@@ -83,18 +83,18 @@ add1(3, 6, display)
     // code to statement
 // }
 
-let geet = function(name) {
-    console.log(name)
+let geet = function(name); {
+    console.log(name);
 }
-geet("Aishu");
+geet("Aishu");;
 
 
 
 // Arrow function => shorter syntax call back function 
 // we can not write as function name
 
-const greets = name=>console.log(name);
-greets("Harsha");  // its wailed used in js
+const greets = name=>console.log(name);;
+greets("Harsha");;  // its wailed used in js
 
 
 // higher order function => map, filter and reduce
@@ -102,13 +102,13 @@ greets("Harsha");  // its wailed used in js
 // 1. map => its iterate the over an array and return the new form of array
 
 // syntax 
-//     var newarray = Array.map(function, callback(Element, indexedDB, array){
+//     var newarray = Array.map(function, callback(Element, indexedDB, array);{
 
-//     }[this array])
+//     }[this array]);
 
 let number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]  // Array
-let double = number.map(item=>item*2) // here double -> newarray, number-> oldarray, item -> element [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] its double use the arrow function
-console.log(double)
+let double = number.map(item=>item*2); // here double -> newarray, number-> oldarray, item -> element [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] its double use the arrow function
+console.log(double);
 
 
 
@@ -116,8 +116,8 @@ console.log(double)
 // syntax is same as map syntax
 
 let number1 = [1, 2, 3, 4, 5, 6]
-const even = number1.filter(item=>item%2===0);
-console.log(even)
+const even = number1.filter(item=>item%2===0);;
+console.log(even);
 
 // array of object
 
@@ -131,16 +131,16 @@ const student = [
 ];
 
 // to filter how many student get a 45 or more than 45
-const marks = student.filter(stud=>stud.marks>=45);
-console.log(marks);
+const marks = student.filter(stud=>stud.marks>=45);;
+console.log(marks);;
 
 // 3. Reduce
 
 // syntax 
-// var newarray = Array.reduce(callback[accomulated, currentvalue, index, array])
+// var newarray = Array.reduce(callback[accomulated, currentvalue, index, array]);
 
 const num = [1, 2, 3, 4];
-const sum2 = num.reduce(function(acc, item){
+const sum2 = num.reduce(function(acc, item);{
     return acc + item;
-}, 1)
-console.log(sum2)
+}, 1);
+console.log(sum2);
